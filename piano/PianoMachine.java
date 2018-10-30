@@ -20,10 +20,13 @@ public class PianoMachine {
 	private Midi midi;
     public int OCTAVE = 0;
     public boolean Recording = false;
+    
+    // ArrayList of Note Events to record sequence of Midi Events
     public ArrayList<NoteEvent> sequence = new ArrayList<>();
     public int lastEventTime;
     
-    // Add wait duration to time in Midi.java
+    // ***Add wait duration to time in Midi.java
+    // directly access duration which is sent to the rest method in Midi.java
     public static long time;
 	private int waitTime;
 
